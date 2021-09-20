@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Date and time for today</title>
+</head>
+<body>
+	The date for today is:
+	<span id="dat"></span>
+	<script type="text/javascript">
+		//var d = new Date();
+		//document.getElementById("dat").innerHTML =d;
+		/*var date = new Date();
+		var day = date.getDate();
+		var month = date.getMonth() + 1;
+		var year = date.getFullYear();
+		document.write(day + "/ " + month + "/ " +year); */
+
+		window.onload = function() {
+			getTime();
+		}
+		function  getTime() {
+			var today = new Date();
+
+			var hrs = today.getHours();
+			var mins = today.getMinutes();
+			var secs = today.getSeconds();
+
+			//add zero in front of the number less than 10
+			mins=checkTime(mins);
+			secs = checkTime(secs);
+
+			document.getElementById("dat").innerHTML = hrs+":"+mins+":"+secs;
+
+			setTimeout(function() {getTime()}, 1000);
+		}
+		//set time interval
+		function checkTime(i){
+			if (i<10) {
+				i="0"+i
+			}
+			return i;
+		}
+	</script>
+
+</body>
+</html>

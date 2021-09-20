@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+        <title> abrikon</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/chair.JPG"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html">About</a> </li>
+                        <li><a href="course.html">Course</a> </li>
+                        <li><a href="blog.html">Blog</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+                
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+    
+            <h1>Our Certificate & online programs for 2021</h1>
+        </section>
+        
+        <!-- Blog page content -->  
+        
+        <section class="blog-content">
+            
+            <div class="row">
+                <div class="blog-left">
+                    <img src="Images/nijila.jpg">
+                    <h2>Our Certificate & online programs for 2021</h2>
+                    <p>Our blogs are the best in the world now.Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. </p>
+                    <br>
+                    <p>Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now</p>
+                    <br>
+                    <p>Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now</p>
+                    <br>
+                    <p>Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now. Our blogs are the best in the world now</p>
+                    
+                    
+                    <div class="comment-box">
+                        
+                        <h3>Leave a comment</h3>
+                        
+                        <form class="comment-form">
+                            
+                            <input type="text" placeholder="Enter name">
+                            <input type="email" placeholder="Enter email">
+                            
+                            <textarea rows="5" placeholder="Your comment"></textarea>
+                            
+                            <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                        
+                        </form>
+                        
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+                <div class="blog-right">
+                    <h3>Post categories</h3>
+                    <div>
+                        <span>Business Analytics</span>
+                        <span>21</span>
+                    </div>
+                    <div>
+                        <span>Data science</span>
+                        <span>28</span>
+                    </div>
+                    <div>
+                        <span>Machine learning</span>
+                        <span>15</span>
+                    </div>
+                    <div>
+                        <span>computer Science</span>
+                        <span>34</span>
+                    </div>
+                    <div>
+                        <span>AutoCAD</span>
+                        <span>42</span>
+                    </div>
+                    <div>
+                        <span>Journalism</span>
+                        <span>40</span>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            
+        </section>
+        
+     
+        
+        
+        
+        
+        
+        
+        
+           
+        
+      <!-- footer -->    
+        
+        <section class="footer">
+            <h4>About us</h4>
+            <p>find more information about us here</p>
+            <div class="icons">
+                 <a href="https://www.facebook.com/abri.yusif"> <i class="fa fa-facebook"></i></a>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Developed by  <i class="fa fa-heart-o"></i> Abri</p>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--Javascript toggle menu -->
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+               navLinks.style.right = "0"; 
+            }
+            function hideMenu(){
+            navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+
+</html>

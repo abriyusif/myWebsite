@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+         <meta name="viewport" content="with=device-width, initial-scale=1.0"> 
+        <title> abrikon</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        
+        <section class="sub-header">
+            <nav>
+                <a href="index.html"><img src="Images/chair.JPG"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">Home</a> </li>
+                        <li><a href="about.html">About</a> </li>
+                        <li><a href="course.html">Course</a> </li>
+                        <li><a href="blog.html">Blog</a> </li>
+                        <li><a href="contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+                
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+    
+            <h1>Contact us</h1>
+        </section>
+        
+      <!---- contact us content------->
+        
+        <section class="location">
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63701.79760735811!2d34.81390273269271!3d3.730950755928512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x179fb7d6a246c0ab%3A0x57774a3381fe577!2sKakuma%2C%20Kenya!5e0!3m2!1sen!2suk!4v1617088488590!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            
+        </section>
+        
+        
+        
+        <section class="contact-us">
+            
+            <div>
+                
+                <div class="row">
+                    
+                    <div class="contact-col">
+                        <div>
+                            <i class="fa fa-home"></i> 
+                            <span>
+                                <h5>Kakuma 4</h5>
+                                <p>Our offices are near distribution center</p>
+                            </span>
+                        </div>
+                        
+                         <div>
+                            <i class="fa fa-phone"></i> 
+                            <span>
+                                <h5>0708599451</h5>
+                                <p>Monday to Friday, 10 AM to 6PM</p>
+                            </span>
+                        </div>
+                        
+                         <div>
+                            <i class="fa fa-envelope-o"></i> 
+                            <span>
+                                <h5>abriyusif20@gmail.com</h5>
+                                <p>Email us your query</p>
+                            </span>
+                        </div>
+                        
+                    </div>
+                    <div class="contact-col">
+                        <h3>Write us a message</h3></1>
+                        <form action="form-handler.php" method="post">
+                            <input type="text" name="name" placeholder="Enter your name" required>
+                            <input type="email" name="email" placeholder="Enter email address" required>
+                            <input type="text" name="subject" placeholder="Enter subject" required>
+                            <textarea rows="8" name="message" placeholder="message" required>
+                            </textarea>
+                            
+                            <button type="submit" class="hero-btn red-btn">Send message</button>
+                            
+                        </form>
+                    
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </section>
+       
+        
+           
+        
+      <!-- footer -->    
+        
+        <section class="footer">
+            <h4>About us</h4>
+            <p>find more information about us here</p>
+            <div class="icons">
+               <a href="https://www.facebook.com/abri.yusif"> <i class="fa fa-facebook"></i></a>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkedin"></i>
+            </div>
+            <p>Developed by  <i class="fa fa-heart-o"></i> Abri</p>
+        </section>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        <!--Javascript toggle menu -->
+        <script>
+            
+            var navLinks = document.getElementById("navLinks");
+            function showMenu(){
+               navLinks.style.right = "0"; 
+            }
+            function hideMenu(){
+            navLinks.style.right = "-200px";
+            }
+        </script>
+    </body>
+
+</html>

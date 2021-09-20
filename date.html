@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Date and Time</title>
+</head>
+<body>
+
+	The date and time is:
+	<span id="dateId"></span>
+	<script type="text/javascript">
+		//var today = new Date();
+		//document.getElementById('dateId').innerHTML = today;
+
+		window.onload = function() {
+			getTime();
+		}
+		function getTime() {
+			var today = new Date();
+
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+
+			// adding zero in front of the time<10
+			h = checkTime(h);
+			m = checkTime(m);
+			s = checkTime(s);
+
+			document.getElementById('dateId').innerHTML =h + ":"+m + ":" +s;
+			setTimeout(function(){getTime()},1000);
+		}
+		function checkTime(i){
+			if(i<10) {
+				i = "0" + i;
+			}
+			return i;
+		}
+	</script>
+
+</body>
+</html>
